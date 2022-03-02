@@ -18,6 +18,14 @@
             foreach (Product product in products)
             {
                 aux = 0;
+                if (product != null)
+                {
+                    aux = product;
+
+                }else
+                {
+                    aux++;
+                }
                 //$"{Id} - {Description}" +
                 //$"\n\tQuantity.......: {Quantity:N2}" +
                 //$"\n\tPrice..........: {Price:N2}" +
