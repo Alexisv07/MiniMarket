@@ -14,30 +14,19 @@
 
         public override string ToString()
         {
-            
+
             foreach (Product product in products)
             {
                 aux = 0;
-                if (product != null)
-                {
-                    aux = product;
+                Console.Write(product);
+                aux += product.ValueToPay();
 
-                }else
-                {
-                    aux++;
-                }
-                //$"{Id} - {Description}" +
-                //$"\n\tQuantity.......: {Quantity:N2}" +
-                //$"\n\tPrice..........: {Price:N2}" +
-                //$"\n\tValue..........: {ValueToPay:N2}";
             }
-
-            return 0;
+            return payroll - (payroll * (decimal)Discount);
         }
 
 
-
-          public void AddProduct(Product product)
+            public void AddProduct(Product product)
         {
             products.Add(product);
         }
