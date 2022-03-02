@@ -15,14 +15,14 @@
         public override string ToString()
         {
 
+            decimal payroll = 0;
             foreach (Product product in products)
             {
-                aux = 0;
                 Console.Write(product);
-                aux += product.ValueToPay();
+                payroll += product.ValueToPay();
 
             }
-            return payroll - (payroll * (decimal)Discount);
+            return payroll + (payroll * (decimal)Discount);
         }
 
 
