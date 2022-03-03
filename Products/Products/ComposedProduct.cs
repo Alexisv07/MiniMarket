@@ -11,13 +11,7 @@ namespace Products
         public List<Product> Products { get; set; }
 
 
-        public override string ToString()
-        {
-            return $"{base.ToString()}" +
-               $"\n\tComposedProduct:{Price:C2} " +
-                $"\n\tDiscount : {Discount:P2}" +
-                $"\n\tValue to Pay: {ValueToPay}";
-        }
+       
 
         public override decimal ValueToPay()
         {
@@ -29,6 +23,14 @@ namespace Products
 
             }
             return payroll - (payroll * (decimal)Discount);
+        }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()}" +
+               $"\n\tComposedProduct:........ {$"{Price:C2}",15 }" +
+                $"\n\tDiscount : ........ {$"{Discount:P2}",15}" +
+                $"\n\tValue to Pay: {$"{ValueToPay():C2}", 15}";
         }
     }
 }

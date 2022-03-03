@@ -10,12 +10,14 @@
 
         public float Tax { get; set; }
 
-        public abstract decimal ValueToPay();
-
         public override string ToString()
         {
-            return $"{Id} - {Description} - {Price} - {Tax}";
+            return $" {Description} - {Id}  - {Price} - {Tax} ";
         }
+
+        public abstract decimal ValueToPay();
+
+        
 
         
     }

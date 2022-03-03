@@ -2,31 +2,31 @@
 {
     public class Invoice : IPay
     {
-        private int aux;
+       
 
         public List<Product> products { get; set; }
 
-        
+
         public decimal ValueToPay()
         {
-            return 0; 
+            return ValueToPay();
         }
 
-        public override string ToString()
-        {
+        //public override string ToString()
+        //{
 
-            decimal payroll = 0;
-            foreach (Product product in products)
-            {
-                Console.Write(product);
-                payroll += product.ValueToPay();
+        //    int aux = 0;
+        //    foreach (Product product in products)
+        //    {
+        //        Console.Write(product);
+        //        aux += produts.ValueToPay();
 
-            }
-            return payroll + (payroll * (decimal)Discount);
-        }
+        //    }
+        //    return aux + (*products);
+        //}
 
 
-            public void AddProduct(Product product)
+        public void AddProduct(Product product)
         {
             products.Add(product);
         }
