@@ -27,10 +27,10 @@ namespace Products
 
         public override string ToString()
         {
-            return $"{base.ToString()}" +
+            return $"{Discount}" +
                $"\n\tComposedProduct:........ {$"{Price:C2}",15 }" +
-                $"\n\tDiscount : ........ {$"{Discount:P2}",15}" +
-                $"\n\tValue to Pay: {$"{ValueToPay():C2}", 15}";
+                $"\n\tDiscount: ........ {$"{Discount:P2}",15}" +
+                $"\n\tValue to Pay:........ {$"{ValueToPay():C2}", 15}";
         }
     }
 }

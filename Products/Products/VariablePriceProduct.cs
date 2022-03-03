@@ -12,10 +12,10 @@
         
         public override string ToString()
         {
-            return $"{base.ToString()}" +
+            return $"{ValueToPay}" +
                 $"\n\tVariablePriceProduct:........ {$"{Price:C2}", 15}" +
-                $"\n\tPticeTotal:....... {$"{Price:C2}", 15}" +
-                $"\n\tValue to Pay: ........ {$"{ValueToPay}", 15}";
+                $"\n\tPticeTotal:.................. {$"{Price:C2}", 15}" +
+                $"\n\tValue to Pay:................ {$"{ValueToPay}", 15}";
         }
 
        

@@ -48,20 +48,10 @@ Console.WriteLine(product3);
 Console.WriteLine(products4);
 Console.WriteLine(product5);
 
-//Invoice invoice = new Invoice();
-//invoice.AddProduct(product1);
-//invoice.AddProduct(product3);
-//invoice.AddProduct(product5);
-//Console.WriteLine(invoice);
+Invoice invoice = new Invoice();
+invoice.AddProduct(product1);
+invoice.AddProduct(product3);
+invoice.AddProduct(product5);
+Console.WriteLine(invoice);
 
 
-//ICollection<Products> product = new List<Products>();
-//{
-//    product1, product2, product3, products4, product5
-//}
-
-//decimal payroll = 0;
-//foreach (Products products in Products)
-//{
-//    Console.WriteLine
-//}

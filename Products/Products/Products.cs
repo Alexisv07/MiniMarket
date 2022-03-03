@@ -12,7 +12,7 @@
 
         public override string ToString()
         {
-            return $" {Description} - {Id}  - {Price} - {Tax} ";
+            return $"{Description} - {Id} - {Price}  - {Tax}";
         }
 
         public abstract decimal ValueToPay();
